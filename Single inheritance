@@ -1,0 +1,26 @@
+// Base or Super Class
+class Animal {
+  void eat() {
+    System.out.println("I can eat");
+  }
+
+  void bark() {
+    System.out.println("I can bark");
+  }
+}
+
+// Inherited or Sub Class
+class Dog extends Animal {
+  void eat() {
+    System.out.println("I eat dog food");
+  }
+}
+
+// Driver Class
+class Test {
+  public static void main(String args[]) {
+    Dog labrador = new Dog();
+    labrador.eat();
+    labrador.bark();
+  }
+}
